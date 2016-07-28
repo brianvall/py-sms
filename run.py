@@ -16,7 +16,7 @@ def receive_sms():
         resp = twilio.twiml.Response()
         resp.message(message)
         return str(resp)
-    else flag == "1":
+    else:
         resp = twilio.twiml.Response()
         with resp.message ("Enjoy!") as m:
             m.media ("https://final20.herokuapp.com")
