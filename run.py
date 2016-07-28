@@ -11,7 +11,7 @@ def receive_sms():
     body = request.values.get('Body', None)
     body = body.lower().strip()  # removes spaces and converts all to lower case
 
-    message = response_handler(body)
+    message, picture = response_handler(body)
  
     resp = twilio.twiml.Response()
     resp.message(message)
