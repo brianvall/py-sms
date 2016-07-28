@@ -15,4 +15,5 @@ def response_handler(body):
         picture_list = ["http://www.livescience.com/images/i/000/009/679/original/090511-platypus-02.jpg?interpolation=lanczos-none&downsize=*:1000", "http://www.zoo.org.au/sites/default/files/styles/zv_carousel_large/public/platypus-HS-animal-profile-web620.jpg?itok=vlgvXmwd", "http://www.slate.com/content/dam/slate/articles/health_and_science/wild_things/2015/06/150622_WILD_Platypus.jpg.CROP.promo-mediumlarge.jpg", "http://www.creationscience.com/onlinebook/webpictures/lifesciences-platypus.jpg", "http://www.zoo.org.au/sites/default/files/styles/zv_carousel_large/public/platypus-head-closeup-animal-profile-web620.jpg?itok=SMj_8PDO"]
     else:
         message = "Invalid command. Text 'start' to restart the Mood Dectector 2000."
+        return (message, "0") 
     return choice (picture_list), "1"
